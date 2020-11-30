@@ -1,0 +1,14 @@
+<Button>:
+    font: 21
+    color: 0.3,0.6,0.7,1
+    size_hint: (0.5, 0.3)
+
+<FloatLayout>:
+    Button:
+        pos_hint: {"x":0.5, "top":1}
+        text: "Hello"
+
+    Button:
+        id: btn
+        text: "World"
+        background_color: [1, 1, 1, 1] if btn.state == "normal" else [255, 255, 255, 1]
